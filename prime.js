@@ -1,18 +1,17 @@
-function CheckPrime(num){
-
-for(i=0;i<=num;i++){
-      if(num%i==0){
+function checkPrime(num) {
+  let count = 0;
+  for (i = 1; i <= num; i++) {
+    if (num % i == 0) {
       count++
-     }
-}
+    }
+  }
 
-if(count==2){
-  return true;
-  }else{
+  if (count == 2) {
+    return true;
+  } else {
     return false;
   }
 }
 
-let res = checkPrime(13)
-
+let res = checkPrime(6)
 console.log(res)
